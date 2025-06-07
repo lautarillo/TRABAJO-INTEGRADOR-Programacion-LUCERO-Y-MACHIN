@@ -19,7 +19,7 @@ def inorden(nodo):
         inorden(nodo[1])
         print(nodo[0], end=' ')
         inorden(nodo[2])
-# Postordemm
+# Postorden
 def postorden(nodo):
     if nodo is not None:
         postorden(nodo[1])
@@ -44,6 +44,13 @@ def construir_arbol():
 
     return crear_nodo(valor, nodo_izquierdo, nodo_derecho)
 
+# Función para imprimir la estructura del árbol
+def imprimir_arbol(nodo, nivel=0, prefijo="Raíz: "):
+    if nodo is not None:
+        print(" " * (4 * nivel) + prefijo + str(nodo[0]))
+        imprimir_arbol(nodo[1], nivel + 1, prefijo="Izq → ")
+        imprimir_arbol(nodo[2], nivel + 1, prefijo="Der → ")
+
 # Construcción del árbol por entrada del usuario
 print("Construya su árbol binario:")
 arbol = construir_arbol()
@@ -57,3 +64,7 @@ inorden(arbol)
 
 print("\nRecorrido en postorden:")
 postorden(arbol)
+
+# Imprimir estructura del árbol
+print("\nEstructura del árbol:")
+imprimir_arbol(arbol)
