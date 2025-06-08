@@ -40,7 +40,7 @@ Además, se incluye una función que imprime la **estructura del árbol de maner
 
 Compartimos una demostración del funcionamiento del programa en el siguiente enlace:
 
-🔗 **[[Ver video en YouTube](ENLACE_AQUI)](https://youtu.be/evTT8XIm1vU)**  
+🔗 **[[Ver video en YouTube], [(https://youtu.be/evTT8XIm1vU))]**  
 
 ---
 
